@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+header, nav, main, footer {
+    display: block;
+}
 body { background-color: #FCEBB6; 
       color: #221811;
       font-family: Verdana, Arial, sans-serif;
@@ -15,18 +21,45 @@ h1 { padding-top: 45px;
 h4 { background-color: #D2B48C;
     font-size: 1.2em;
 	padding-left:   .5em;   
-	padding-bottom: .25em;    
+    padding-bottom: .25em;
+    text-transform: capitalize;
+    border-bottom: solid;
+    padding-bottom: 0;
+    float: none; 
 }
-nav { text-align: center; 
-     font-weight: bold; 
-	 font-size: 1.5em;
-	 padding-top: 10px;
+nav { 
+    text-align: center; 
+    font-weight: bold; 
+	font-size: 1.5em;
+    padding-top: 10px;
+    float: left;
+    width: 200px;
 }
 nav a { text-decoration: none; }
-main { padding-left: 2em;
-      padding-right: 2em;
-	  padding-bottom: 2em;
-	  display: block;
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+nav:link {
+    color: #FEF6C2;
+}
+nav:visited {
+    color: #D2B48C;
+}
+nav:hover {
+    color: #CC9933;
+}
+main { padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 2em;
+      padding-top: 0;
+      margin-left: 200px;
+      display: block;
+      background-color: #FEF6C2;
+}
+main h2, h3, h4, p, div, ul, dl {
+    padding-left: 3em;
+    padding-right: 2em;
 }
 footer { background-color: #D2B48C;
        font-size: .60em;
@@ -36,14 +69,35 @@ footer { background-color: #D2B48C;
 #wrapper { width: 80%;
            margin-right: auto;
 		   margin-left: auto;
-		   background-color: #FEF6C2;
+		   background-color: #231814;
 		   min-width: 900px;
 		   max-width: 1280px;
 		   box-shadow: 3px 3px 3px #666666;
 }
 .details { padding-left: 20%;
            padding-right: 20%;
+           overflow: auto;
 }
 img { padding-left: 10px;
      padding-right: 10px;
+}
+#heroroad {
+    background-image: url(heroroad.jpg);
+    background-size: 100%;
+    height: 200px;
+}
+#heromugs {
+    background-image: url(heromugs.jpg);
+    background-size: 100%;
+    height: 200px;
+}
+#heroguitar {
+    background-image: url(heroguitar.jpg);
+    background-size: 100%;
+    height: 200px;
+}
+.floatleft {
+    float: left;
+    padding-bottom: 2em;
+    padding-right: 2em;
 }
